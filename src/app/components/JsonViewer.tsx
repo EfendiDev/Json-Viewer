@@ -10,7 +10,13 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 
 // TreeNode Component
-const TreeNode = ({ name, value, depth = 0 }) => {
+interface TreeNodeProps {
+  name: string;
+  value: any;
+  depth?: number;
+}
+
+const TreeNode = ({ name, value, depth = 0 }: TreeNodeProps) => {
   const [isExpanded, setIsExpanded] = useState(true);
   const [isCopied, setIsCopied] = useState(false);
   const [showFullText, setShowFullText] = useState(false);
