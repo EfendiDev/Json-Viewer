@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# JSON Viewer
+
+An interactive JSON visualization and formatting tool built with React and shadcn/ui. View, format, and analyze JSON data with a modern, feature-rich interface.
+
+## Features
+
+- 📝 Edit and validate JSON in real-time
+- 🌳 Collapsible tree view visualization
+- 🔍 Search within JSON content
+- 💅 Format/Beautify JSON with customizable indentation
+- 📋 Copy full or partial JSON content
+- 🌐 Load JSON from URLs
+- 🌙 Dark mode support
+
+## Tech Stack
+
+- React
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- shadcn/ui components
+- Lucide Icons
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# Clone repository
+git clone https://github.com/efendidev/json-viewer.git
+
+# Install dependencies
+cd json-viewer
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit `http://localhost:3000/json-viewer` to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Paste JSON in the editor or load from URL
+2. Switch to viewer tab for tree visualization
+3. Use search to find specific values
+4. Click values to copy them
+5. Use beautify/uglify buttons to format JSON
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit changes (`git commit -m 'Add amazing feature'`)
+4. Push to branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+MIT License - See [LICENSE](LICENSE) for details.
 
-## Deploy on Vercel
+## Acknowledgments
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Built with [shadcn/ui](https://ui.shadcn.com/)
+- Icons by [Lucide](https://lucide.dev/)
